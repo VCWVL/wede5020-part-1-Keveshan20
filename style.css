@@ -220,3 +220,49 @@ main {
 }
 
 
+/* HEADER CONTAINER */
+header {
+    display: flex;
+    justify-content: space-between; /* Logo left, button right */
+    align-items: center;
+    padding: 1rem 5rem;
+    z-index: 999;
+}
+
+/* LOGO */
+header h1.logo {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center; /* nav links in the middle */
+    flex: 1; /* allow nav to expand between logo and button */
+    gap: 3rem;
+}
+
+/* SIGN-IN BUTTON */
+.btn-signing {
+    display: none; /* hide by default */
+}
+
+/* Show SIGN IN button only on homepage */
+body.home .btn-signing {
+    display: inline-block;
+}
+
+
+.hero-video {
+  width: 400px;      /* make it smaller */
+  height: auto;      /* keeps proportions */
+  display: block;    /* so margin works */
+  margin-left: center; /* pushes it to the right */
+  margin-right: 20px; /* adds some spacing from the edge */
+  border-radius: 12px; /* optional: gives rounded corners */
+}
+
+
+
+
